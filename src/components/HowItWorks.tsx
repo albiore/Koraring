@@ -36,12 +36,7 @@ export const HowItWorks = () => {
           <div className="space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-12">
             {steps.map((step, index) => (
               <FadeIn key={step.number} delay={200 + index * 100}>
-                <div className="relative">
-                  {/* Connection line for desktop - positioned between number and title */}
-                  {index < steps.length - 1 && (
-                    <div className="hidden lg:block absolute top-6 left-full w-full h-px bg-border -translate-x-4" />
-                  )}
-                  
+                <div className="relative">                  
                   <div className="text-center lg:text-left">
                     <span className="inline-block text-5xl font-light text-primary/30 mb-4">
                       {step.number}

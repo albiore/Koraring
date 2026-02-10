@@ -5,7 +5,7 @@ import koraRing from "@/assets/kora-ring.png";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-[#FBF4E2] overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-[#f6f1e2] overflow-hidden">
       
       <div className="kora-container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -41,7 +41,7 @@ export const Hero = () => {
           {/* Ring Image */}
           <FadeIn delay={400} className="flex justify-center lg:justify-end">
             {/* Ensure ring area matches hero background exactly */}
-            <div className="relative bg-[#FBF4E2]">
+            <div className="relative bg-[#f6f1e2]">
               {/* Keep hero background perfectly flat; no localized glow behind ring */}
               <img 
                 src={koraRing} 
